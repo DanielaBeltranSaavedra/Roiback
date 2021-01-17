@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Up Post</title>
+	
+	<script type="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+</head>
+<body class="body">
+<h1 class="heading">Bienvenido a la seccion donde puede subir un Post</h1>
+<form class="site-form" method="post"  enctype="multipart/form-data">
+	  					{% csrf_token %}
+						{{ Form.as_p }}
+						{{ Form2.as_p }}
+				<input type="submit" value="Subir producto" id="Comprar">
+				</form>
+
+
+</body>
+</html>
